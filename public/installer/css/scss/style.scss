@@ -8,7 +8,7 @@
 //original selectors
 //sub, sup
 %extend_1 {
-	font-size: 75%;
+	font-size: 100%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -28,7 +28,7 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	font-family: $font_2, $font_3, $font_4, $font_5, $font_0;
-	font-weight: 300;
+	font-weight: 400;
 	color: $color_3;
 	font-size: 12px;
 	line-height: 1.75em;
@@ -47,46 +47,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-moz-font-feature-settings: "liga" on;
 }
-article {
-	display: block;
-}
-aside {
-	display: block;
-}
-details {
-	display: block;
-}
-figcaption {
-	display: block;
-}
-figure {
-	display: block;
-	margin: 1em 40px;
-}
-footer {
-	display: block;
-}
-header {
-	display: block;
-}
-hgroup {
-	display: block;
-}
-main {
-	display: block;
-}
-menu {
-	display: block;
-}
-nav {
-	display: block;
-}
-section {
-	display: block;
-}
-summary {
-	display: block;
-}
+
 audio {
 	display: inline-block;
 	vertical-align: baseline;
@@ -719,18 +680,14 @@ input[type=text] {
 	margin-bottom: 1.18125em;
 }
 .master {
-	background-image: url($url_1);
-	background-size: cover;
-	background-position: top;
+	// background-image: url($url_1);
+	background: url($url_1) 50% 80% / cover;
+	// background-color: #7a36b1;
+	// background-size: cover;
+	// background-position: top;
 	min-height: 100vh;
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 .box {
@@ -741,17 +698,17 @@ input[type=text] {
 	//Instead of the line below you could use @include box-sizing($bs)
 	box-sizing: border-box;
 	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: 0 10px 10px $color_7, 0 6px 3px $color_8;
+	box-shadow: 0 19px 38px $color_8, 0 15px 12px transparent
 }
 .header {
-	background-color: $color_9;
+	background-color: $color_10;
 	padding: 30px 30px 40px;
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 3px 3px 0 0;
 	text-align: center;
 }
 .header__step {
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 1.1px;
@@ -769,7 +726,7 @@ input[type=text] {
 	-ms-user-select: none;
 	//Instead of the line below you could use @include user-select($select)
 	user-select: none;
-	color: $color_10;
+	color: $color_3;
 	font-weight: 400;
 	font-size: 20px;
 	margin: 0 0 15px;
@@ -791,6 +748,8 @@ input[type=text] {
 	-ms-flex-align: center;
 	align-items: center;
 	margin-top: -20px;
+	position: relative;
+	z-index: 1;
 }
 .step__divider {
 	background-color: $color_11;
@@ -868,7 +827,7 @@ input[type=text] {
 }
 .button {
 	display: inline-block;
-	background-color: $color_12;
+	background-color: $color_9;
 	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
 	border-radius: 2px;
 	padding: 7px 20px;
